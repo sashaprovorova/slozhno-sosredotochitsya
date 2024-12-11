@@ -1,5 +1,288 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+/* GENERAL STYLES FOR THE ENTIRE PAGE*/
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  padding: 0 10px;
+  color: var(--text-color, #f1b2ce);
+  font-family: var(--main-font, sans-serif);
+  font-weight: var(--text-weight);
+  font-size: var(--text-size);
+  line-height: var(--line-height);
+  background-color: var(--bg-color, #000028);
+  background-image: url(../images/cover-image-dark.png);
+  background-attachment: fixed;
+  inline-size: 100%;
+}
+
+.accent-link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+/* HEADER GENERAL STYLES */
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 16px 0 18px;
+  color: var(--accent-color, #ff0070);
+}
+
+/* DECORATIVE ELEMENTS FOR BOTH HEADER AND FOOTER */
+
+.decorated-zone {
+  position: relative;
+  inline-size: 100%;
+  block-size: 100vh;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-end: 0;
+  inset-block-start: 10px;
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inline-size: 25px;
+  block-size: 25px;
+  inset-inline-start: 0;
+  inset-block-end: 10px;
+}
+
+/* DECORATIVE ELEMENT ONLY FOR HEADER DARK THEME */
+
+.header__rec {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  inset-inline-end: 8px;
+  inset-block-start: 10px;
+}
+
+.header__rec::after {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 4px rgba(255, 0, 112, 0.5);
+  background-color: var(--accent-color);
+  inline-size: 10px;
+  block-size: 10px;
+}
+
+/* NAVIGATION MENU IN HEADER */
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: center;
+}
+
+.header__theme-menu-button  {
+  border: none;
+  padding: 0;
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: lowercase;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover, 
+.header__theme-menu-button_active {
+  padding-inline: 13px;
+  outline: 1px solid currentColor;
+}
+
+/* FANCY TITLE FOR HEADER AND FOOTER*/
+
+.fancy__title {
+  color: #db00ff;
+  font-weight: var(--heading-weight);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  line-height: 0.82;
+}
+
+.header__title {
+  justify-self: start;
+  align-self: center;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+/* PARAGRAPH FOR HEADER*/
+
+.header__text {
+  justify-self: end;
+  align-self: center;
+  font-weight: var(--heading-weight);
+}
+
+/* ALL HEADINGS*/
+
+.heading {
+  font-weight: var(--heading-weight);
+  font-size: inherit;
+}
+
+.content__title {
+  color: var(--accent-color);
+}
+
+/* MAIN SECTION */
+
+.content{
+  margin-block: 40px;
+}
+
+.content__section:not(:last-of-type) {
+  margin-block-end: 50px;
+}
+
+/* FANCY HEADINGS AND TEXT */
+
+.title-decor {
+  color: var(--bg-color);
+  background-color: var(--accent-color);
+}
+
+/* TEXT SECTIONS */
+
+.content__text-block-item .title-decor {
+  margin-block-end: 10px;
+}
+
+.content__text-block-item {
+  margin-block: 20px;
+}
+
+.content__text-subblock .title-decor {
+  margin-block-start: 20px;
+  font-weight: var(--text-weight);
+}
+
+/* SECTION WITH IMAGES */
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex; 
+}
+
+.footer__title {
+  display: flex;
+  margin: auto;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+@media (width>=620px) {
+
+  .page {
+    padding: 0 20px;
+  }
+
+  .header__rec {
+    inset-block-start: 20px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .header__text {
+    max-inline-size: 50%;
+  }
+
+  .fancy__title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .decorated-zone::before{
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-block-end: 20px;
+  }
+
+  .explanation, 
+  .solutions {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 20px;
+  }
+
+  .explanation .content__text-block-item, 
+  .solutions .content__text-block-item{
+    margin-block-start: 0;
+  }
+  
+  .reasons .content__title {
+    inline-size: 33%;
+  }
+
+  .images {
+    grid-template-columns: repeat(3, 1fr); ;
+    grid-template-rows: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    margin-block-start: 20px;
+  }
+
+  .images__sunset {
+    grid-column: 1 / 3;
+    grid-row: 1 / auto;
+  }
+  .images__ice-cream {
+    grid-column: 3 / auto;
+    grid-row: 1 / 3;
+  }
+  .images__tape {
+    grid-column: 1 / auto;
+    grid-row: 2 / 4;
+  }
+  .images__street {
+    grid-column:  2 / 4;
+    grid-row: 3 / auto;
+  }
+  .images__books {
+    grid-column:  2 / auto;
+    grid-row: 2 / auto;
+  }
+}
+
+@media (width>=1000px) {
+  .reasons .content__text-block-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 20px;
+  }
 }

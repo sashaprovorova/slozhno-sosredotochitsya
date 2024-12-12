@@ -133,7 +133,7 @@
   align-self: center;
   margin-inline: 10px;
   font-weight: var(--heading-weight);
-  padding-inline-end: 20px;
+  /* padding-inline-end: 20px; */
 }
 
 /* ALL HEADINGS*/
@@ -171,7 +171,7 @@
   margin-block-end: 10px;
 }
 
-.content__text-block-item{
+.content__text-block-item {
   margin-block-start: 20px;
 }
 

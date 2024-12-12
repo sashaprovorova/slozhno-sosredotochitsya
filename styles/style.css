@@ -170,8 +170,12 @@
   margin-block-end: 10px;
 }
 
-.content__text-block-item {
-  margin-block: 20px;
+.content__text-block-item{
+  margin-block-start: 20px;
+}
+
+.content__text-block-list .content__text-block-item:not(:last-of-type) {
+  margin-block-end: 20px;
 }
 
 .content__text-subblock .title-decor {
@@ -208,7 +212,7 @@
   }
 
   .header {
-    padding: 16px 0 0;
+    padding: 32px 0 36px;
   }
 
   .header__rec {
@@ -221,7 +225,7 @@
   }
 
   .header__text {
-    align-self: start;
+    /* align-self: start; */
     margin-inline: 20px;
     max-inline-size: 50%;
   }
@@ -305,6 +309,7 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+    gap: 26px;
   }
   
   .reasons .content__text-block-list {

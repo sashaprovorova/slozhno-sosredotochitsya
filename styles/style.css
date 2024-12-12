@@ -35,26 +35,26 @@
   block-size: 100vh;
 }
 
-.decorated-zone::before {
-  content: '';
-  position: absolute;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-  inline-size: 25px;
-  block-size: 25px;
-  inset-inline-end: 0;
-  inset-block-start: 10px;
-}
-
+.decorated-zone::before, 
 .decorated-zone::after {
   content: '';
   position: absolute;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
   inline-size: 25px;
   block-size: 25px;
-  inset-inline-start: 0;
-  inset-block-end: 20px;
+}
+
+.decorated-zone::before {
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inset-inline-end: 10px;
+  inset-block-start: 10px; 
+}
+
+.decorated-zone::after {
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inset-inline-start: 10px;
+  inset-block-end: 10px;
 }
 
 /* DECORATIVE ELEMENT ONLY FOR HEADER DARK THEME */
@@ -64,8 +64,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  inset-inline-end: 8px;
-  inset-block-start: 10px;
+  inset-inline-end: 18px;
+  inset-block-start: 12px;
 }
 
 .header__rec::after {
@@ -83,6 +83,7 @@
 .header__theme-menu {
   justify-self: end;
   align-self: center;
+  margin-inline-end: 10px;
 }
 
 .header__theme-menu-list {
@@ -130,6 +131,7 @@
 .header__text {
   justify-self: end;
   align-self: center;
+  margin-inline: 10px;
   font-weight: var(--heading-weight);
 }
 
@@ -194,7 +196,6 @@
 }
 
 .footer__title {
-  display: flex;
   margin: auto;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
@@ -203,17 +204,25 @@
 
   .content {
     margin-inline: 20px;
+    margin-block: 60px;
   }
 
-  .header {
-    padding: 1rem 1.5rem;
-  }
+  /* .header {
+    padding: 16px 0 32px;
+  } */
 
   .header__rec {
-    inset-block-start: 20px;
+    inset-inline-end: 30px;
+    inset-block-start: 22px;
+  }
+
+  .header__theme-menu {
+    margin-inline-end: 20px;
   }
 
   .header__text {
+    align-self: start;
+    margin-inline: 20px;
     max-inline-size: 50%;
   }
 
@@ -222,17 +231,23 @@
   }
 
   .decorated-zone::before {
-    inset-block-start: 20px;
+    inset-inline-end: 20px;
+    inset-block-start: 20px; 
+  }
+  
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
   }
 
-  .decorated-zone::after {
-    inset-block-end: 20px;
+  .content__section:not(:last-of-type) {
+    margin-block-end: 80px;
   }
 
   .explanation, 
   .solutions {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 2fr 4fr;
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 20px;
   }

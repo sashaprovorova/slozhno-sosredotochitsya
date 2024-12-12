@@ -1,7 +1,7 @@
 /* GENERAL STYLES FOR THE ENTIRE PAGE*/
 
 .page {
-  padding: 0 10px;
+  /* padding: 0 10px; */
   color: var(--text-color, #f1b2ce);
   font-family: var(--main-font, sans-serif);
   font-weight: var(--text-weight);
@@ -54,7 +54,7 @@
   inline-size: 25px;
   block-size: 25px;
   inset-inline-start: 0;
-  inset-block-end: 10px;
+  inset-block-end: 20px;
 }
 
 /* DECORATIVE ELEMENT ONLY FOR HEADER DARK THEME */
@@ -147,6 +147,7 @@
 /* MAIN SECTION */
 
 .content {
+  margin-inline: 10px;
   margin-block: 40px;
 }
 
@@ -200,21 +201,16 @@
 
 @media (width>=620px) {
 
-  .page {
-    padding: 0 20px;
+  .content {
+    margin-inline: 20px;
+  }
+
+  .header {
+    padding: 1rem 1.5rem;
   }
 
   .header__rec {
     inset-block-start: 20px;
-  }
-
-  .header__theme-menu {
-    justify-self: center;
-    align-self: start;
-  }
-
-  .header__theme-menu-list {
-    flex-direction: row;
   }
 
   .header__text {
@@ -286,6 +282,15 @@
 
 @media (width>=1000px) {
 
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+  
   .reasons .content__text-block-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

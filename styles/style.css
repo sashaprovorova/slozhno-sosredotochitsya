@@ -35,7 +35,7 @@
   block-size: 100vh;
 }
 
-.decorated-zone::before, 
+.decorated-zone::before,
 .decorated-zone::after {
   content: '';
   position: absolute;
@@ -47,7 +47,7 @@
   border-inline-end: 1px solid var(--fancy-color);
   border-block-start: 1px solid var(--fancy-color);
   inset-inline-end: 10px;
-  inset-block-start: 10px; 
+  inset-block-start: 10px;
 }
 
 .decorated-zone::after {
@@ -72,7 +72,7 @@
   content: '';
   display: block;
   border-radius: 50%;
-  box-shadow: 0 0 4px 4px rgba(255, 0, 112, 0.5);
+  box-shadow: 0 0 4px 4px rgb(255 0 112 / 0.5);
   background-color: var(--accent-color);
   inline-size: 10px;
   block-size: 10px;
@@ -105,7 +105,7 @@
   cursor: pointer;
 }
 
-.header__theme-menu-button:hover, 
+.header__theme-menu-button:hover,
 .header__theme-menu-button_active {
   padding-inline: 13px;
   outline: 1px solid currentColor;
@@ -197,7 +197,7 @@
 /* FOOTER */
 
 .footer {
-  display: flex; 
+  display: flex;
 }
 
 .footer__title {
@@ -236,9 +236,9 @@
 
   .decorated-zone::before {
     inset-inline-end: 20px;
-    inset-block-start: 20px; 
+    inset-block-start: 20px;
   }
-  
+
   .decorated-zone::after {
     inset-inline-start: 20px;
     inset-block-end: 20px;
@@ -248,7 +248,7 @@
     margin-block-end: 80px;
   }
 
-  .explanation, 
+  .explanation,
   .solutions {
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -256,11 +256,11 @@
     gap: 20px;
   }
 
-  .explanation .content__text-block-item, 
+  .explanation .content__text-block-item,
   .solutions .content__text-block-item {
     margin-block-start: 0;
   }
-  
+
   .reasons .content__title {
     inline-size: 30%;
   }
@@ -288,15 +288,14 @@
   }
 
   .images__street {
-    grid-column:  2 / 4;
+    grid-column: 2 / 4;
     grid-row: 3 / auto;
   }
 
   .images__books {
-    grid-column:  2 / auto;
+    grid-column: 2 / auto;
     grid-row: 2 / auto;
   }
-
 }
 
 @media (width>=1000px) {
@@ -322,7 +321,7 @@
 
   .header__text {
     padding-inline-end: 0;
-    }
+  }
 
   .reasons .content__text-block-list {
     display: grid;
@@ -330,5 +329,4 @@
     grid-template-rows: repeat(auto-fit, 1fr);
     gap: 20px;
   }
-
 }

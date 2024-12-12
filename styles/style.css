@@ -2,12 +2,12 @@
 
 .page {
   /* padding: 0 10px; */
-  color: var(--text-color, #f1b2ce);
+  color: var(--text-color);
   font-family: var(--main-font, sans-serif);
   font-weight: var(--text-weight);
   font-size: var(--text-size);
   line-height: var(--line-height);
-  background-color: var(--bg-color, #000028);
+  background-color: var(--bg-color);
   background-image: url(../images/cover-image-dark.png);
   background-attachment: fixed;
   inline-size: 100%;

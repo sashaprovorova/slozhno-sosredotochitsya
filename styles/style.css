@@ -207,9 +207,9 @@
     margin-block: 60px;
   }
 
-  /* .header {
-    padding: 16px 0 32px;
-  } */
+  .header {
+    padding: 16px 0 0;
+  }
 
   .header__rec {
     inset-inline-end: 30px;
@@ -258,7 +258,7 @@
   }
   
   .reasons .content__title {
-    inline-size: 33%;
+    inline-size: 30%;
   }
 
   .images {
@@ -300,6 +300,7 @@
   .header__theme-menu {
     justify-self: center;
     align-self: start;
+    margin-block-start: 10px;
   }
 
   .header__theme-menu-list {

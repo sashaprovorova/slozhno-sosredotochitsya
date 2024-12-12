@@ -24,7 +24,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
   padding: 16px 0 18px;
-  color: var(--accent-color, #ff0070);
+  color: var(--fancy-color, #ff0070);
 }
 
 /* DECORATIVE ELEMENTS FOR BOTH HEADER AND FOOTER */
@@ -44,15 +44,15 @@
 }
 
 .decorated-zone::before {
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--fancy-color);
+  border-block-start: 1px solid var(--fancy-color);
   inset-inline-end: 10px;
   inset-block-start: 10px; 
 }
 
 .decorated-zone::after {
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--fancy-color);
+  border-block-end: 1px solid var(--fancy-color);
   inset-inline-start: 10px;
   inset-block-end: 10px;
 }
@@ -114,7 +114,7 @@
 /* FANCY TITLE FOR HEADER AND FOOTER*/
 
 .fancy__title {
-  color: #db00ff;
+  color: var(--big-title);
   font-weight: var(--heading-weight);
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
   line-height: 0.82;
@@ -132,8 +132,8 @@
   justify-self: end;
   align-self: center;
   margin-inline: 10px;
-  font-weight: var(--heading-weight);
   padding-inline-end: 20px;
+  font-weight: var(--heading-weight);
 }
 
 /* ALL HEADINGS*/
@@ -144,7 +144,7 @@
 }
 
 .content__title {
-  color: var(--accent-color);
+  color: var(--fancy-color);
 }
 
 /* MAIN SECTION */
@@ -161,7 +161,7 @@
 /* FANCY HEADINGS AND TEXT */
 
 .title-decor {
-  color: var(--bg-color);
+  color: var(--decor-color);
   background-color: var(--accent-color);
 }
 

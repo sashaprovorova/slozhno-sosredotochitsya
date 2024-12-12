@@ -133,7 +133,7 @@
   align-self: center;
   margin-inline: 10px;
   font-weight: var(--heading-weight);
-  /* padding-inline-end: 20px; */
+  padding-inline-end: 20px;
 }
 
 /* ALL HEADINGS*/
@@ -213,7 +213,7 @@
   }
 
   .header {
-    padding: 100px 0 100px;
+    padding: 100px 0 105px;
   }
 
   .header__rec {
@@ -313,9 +313,17 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 26px;
+    gap: 30px;
   }
-  
+
+  .header__title {
+    margin-block-start: 10px;
+  }
+
+  .header__text {
+    padding-inline-end: 0;
+    }
+
   .reasons .content__text-block-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

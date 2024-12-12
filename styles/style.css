@@ -226,9 +226,8 @@
   }
 
   .header__text {
-    /* align-self: start; */
     margin-inline: 20px;
-    max-inline-size: 50%;
+    max-inline-size: 45%;
   }
 
   .fancy__title {
@@ -303,7 +302,7 @@
 @media (width>=1000px) {
 
   .header {
-    padding: 10px 0 60px;
+    padding: 10px 0 50px;
   }
 
   .header__theme-menu {

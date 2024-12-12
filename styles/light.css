@@ -19,6 +19,7 @@
   --decor-color: #353430;
   --fancy-color: #353430;
   background-image: url(../images/cover-image-light.png);
+  background-attachment: fixed;
 }
 
 .theme_light .header__rec,
@@ -45,6 +46,7 @@
 
   .page {
     background-image: url(../images/cover-image-light.png);
+    background-attachment: fixed;
   }
 
   .header__rec,

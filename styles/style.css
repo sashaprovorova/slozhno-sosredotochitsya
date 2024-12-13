@@ -349,7 +349,7 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 20px;
+    gap: 13px;
   }
 
   .header__title {

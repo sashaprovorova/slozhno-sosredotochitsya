@@ -1,5 +1,4 @@
 .page.theme_light {
-
   /* COLORS */
 
   --bg-color: #ffeef5;
@@ -8,6 +7,7 @@
   --big-title: #ffc2e6;
   --decor-color: #353430;
   --fancy-color: #353430;
+  --faded-color: #36353066;
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -19,7 +19,6 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-
     /* COLORS */
 
     --bg-color: #ffeef5;
@@ -28,6 +27,7 @@
     --big-title: #ffc2e6;
     --decor-color: #353430;
     --fancy-color: #353430;
+    --faded-color: #36353066;
   }
 
   .page {

@@ -1,5 +1,4 @@
 .page.theme_dark {
-
   /* COLORS */
 
   --bg-color: #000028;
@@ -8,6 +7,7 @@
   --big-title: #db00ff;
   --decor-color: #000028;
   --fancy-color: #ff0070;
+  --faded-color: #ff007066;
   background-image: url(../images/cover-image-dark.png);
 }
 

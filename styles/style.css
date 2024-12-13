@@ -93,7 +93,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -349,7 +349,7 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 30px;
+    gap: 20px;
   }
 
   .header__title {

@@ -337,19 +337,19 @@
   /* HEADER */
 
   .header {
-    padding: 0 0 51px;
+    padding: 20px 0 51px;
   }
 
   .header__theme-menu {
     justify-self: center;
     align-self: start;
     margin-inline-start: 15px;
-    margin-block-start: 20px;
+    /* margin-block-start: 20px; */
   }
 
   .header__theme-menu-list {
     flex-direction: row;
-    gap: 13px;
+    gap: 11px;
   }
 
   .header__title {

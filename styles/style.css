@@ -354,6 +354,7 @@
 
   .header__title {
     margin-block-start: 30px;
+    text-shadow: 4px 4px 0 var(--modified-title);
   }
 
   .header__text {

@@ -8,6 +8,7 @@
   --decor-color: #353430;
   --fancy-color: #353430;
   --faded-color: #36353066;
+  --modified-title: #c6226b;
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -28,6 +29,7 @@
     --decor-color: #353430;
     --fancy-color: #353430;
     --faded-color: #36353066;
+    --modified-title: #c6226b;
   }
 
   .page {

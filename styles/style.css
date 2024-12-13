@@ -353,8 +353,8 @@
   }
 
   .header__title {
-    margin-block-start: 32px;
-    margin-inline-start: 2px;
+    margin-inline-start: 5px;
+    margin-block-start: 35px;
     text-shadow: 4px 4px 0 var(--modified-title);
   }
 

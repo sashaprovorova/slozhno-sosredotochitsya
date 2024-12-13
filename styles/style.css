@@ -184,7 +184,7 @@
   margin-block-end: 10px;
 }
 
-.reasons .content__text-block-item {
+.content__text-block-item {
   margin-block-start: 20px;
 }
 
@@ -288,6 +288,10 @@
 
   .reasons .content__title {
     inline-size: 30%;
+  }
+
+  .reasons .content__text-block-item {
+    margin-block-start: 20px;
   }
 
   .images {

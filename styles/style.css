@@ -224,7 +224,7 @@
   /* HEADER */
 
   .header {
-    padding: 100px 0 105px;
+    padding: 105px 0;
   }
 
   .header__title {
@@ -337,13 +337,13 @@
   /* HEADER */
 
   .header {
-    padding: 10px 0 51px;
+    padding: 20px 0 51px;
   }
 
   .header__theme-menu {
     justify-self: center;
     align-self: start;
-    margin-inline-start: 10px;
+    margin-inline-start: 15px;
     margin-block-start: 20px;
   }
 
